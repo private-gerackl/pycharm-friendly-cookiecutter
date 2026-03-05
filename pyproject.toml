@@ -1,6 +1,6 @@
 [project]
 name = "pfcookiecutter"
-version = "0.1.2"
+version = "0.1.3"
 description = "Add parser for update cookiecutter template for correct pycharm lexer works"
 authors = [
     {name = "Stroev George", email = "stroev20160@gmail.com"},

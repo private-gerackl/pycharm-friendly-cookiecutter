@@ -1,6 +1,6 @@
 [project]
 name = "pfcookiecutter"
-version = "0.1.0"
+version = "0.1.2"
 description = "Add parser for update cookiecutter template for correct pycharm lexer works"
 authors = [
     {name = "Stroev George", email = "stroev20160@gmail.com"},
@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mycommand = "pfcookiecutter.cli:app"
+pfc = "pfcookiecutter.cli:app"
 
 [build-system]
 requires = ["hatchling"]

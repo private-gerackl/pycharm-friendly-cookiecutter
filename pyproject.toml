@@ -13,7 +13,7 @@ dependencies = [
 ]
 
 [project.scripts]
-mycommand = "mylib.cli:app"
+mycommand = "pfcookiecutter.cli:app"
 
 [build-system]
 requires = ["hatchling"]

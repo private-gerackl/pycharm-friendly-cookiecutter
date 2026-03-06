@@ -16,7 +16,9 @@ TEMPLATE_FOLDER = '_11cookiecutter_source_name11_'
 WORKDIR = Path(__file__).parent.absolute()
 
 @app.command()
-def hello():
+def hello(
+    template_path: str
+):
     try:
         rename_templates(
             mapped=MAPPED,
@@ -25,7 +27,7 @@ def hello():
         )
 
         cookiecutter(
-            '/home/gerackl/mine/apps/pycharm/pycharm-projects/my-projects/pycharm-friendly-cookiecutter/pfcookiecutter',
+            template_path,
             overwrite_if_exists=True,
         )
     finally:

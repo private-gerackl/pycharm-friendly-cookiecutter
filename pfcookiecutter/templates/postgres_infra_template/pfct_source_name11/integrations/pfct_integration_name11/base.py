@@ -1,0 +1,4 @@
+from pfct_base_integration_class_module11 import pfct_BaseIntegrationClass11
+
+class Basepfct_ShortIntegrationNameCamelCase11Repository(pfct_BaseIntegrationClass11):
+    pass

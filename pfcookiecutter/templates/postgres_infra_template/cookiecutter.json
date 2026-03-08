@@ -1,0 +1,7 @@
+{
+  "source_name": "app",
+  "integration_name": "integration_name",
+  "ShortIntegrationNameCamelCase": "PSQL",
+  "BaseIntegrationClass": "BaseIntegration",
+  "base_integration_class_module": "app.integrations.base"
+}

@@ -7,12 +7,10 @@ from pfcookiecutter.renamer import rename_templates
 from pfcookiecutter.renamer import update_string
 
 MAPPED = {
-    '_11': '{{cookiecutter.',
-    '11_': '}}',
+    'pfct_': '{{cookiecutter.',
+    '11': '}}',
 }
 
-TEMPLATE_FOLDER = '_11cookiecutter_source_name11_'
-WORKDIR = Path(__file__).parent.absolute()
 
 def pfc(
     template_path: Path,
@@ -32,10 +30,11 @@ def pfc(
             workdir=template_path,
             template_folder=template_folder,
         )
-
         cookiecutter(
             str(template_path.absolute()),
             overwrite_if_exists=True,
+            no_input=True,
+            extra_context=content.model_dump(mode='json'),
         )
     finally:
         rename_templates(
